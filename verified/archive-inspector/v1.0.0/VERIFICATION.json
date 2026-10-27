@@ -1,0 +1,70 @@
+{
+  "artifact_id": "black-swan/archive-inspector/1.0.0",
+  "release_scope": "Standalone, bounded, read-only ZIP structure and selected text inspection",
+  "publication_decision": "PASS_SCOPED_STANDALONE",
+  "verification": {
+    "checked_at_utc": "2026-10-27T10:04:30+00:00",
+    "environment": {
+      "python": "3.13.5",
+      "os": "Linux"
+    },
+    "unit_tests": {
+      "executed": 8,
+      "passed": 8,
+      "failed": 0,
+      "command": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+      "status": "PASS"
+    },
+    "cli_smoke": {
+      "benign_synthetic_zip": {
+        "expected_exit": 0,
+        "actual_exit": 0
+      },
+      "traversal_zip": {
+        "expected_exit": 1,
+        "actual_exit": 1
+      },
+      "status": "PASS"
+    },
+    "code_unchanged_from_archived_sources": true
+  },
+  "provenance": {
+    "archived_source": "back_swan-codex-collect-required-telemetry-evidence.zip",
+    "source_archive_sha256": "56ec418ee3ef3e228ee132f8d99f0bdc767e53c645cca4b18a5e34cae20548de",
+    "source_members": [
+      {
+        "path": "scripts/inspect_general_archive.py",
+        "sha256": "f0021eddc20eb6bcb2ca875fa32f93ddcac59d79c22d1a88d6acf4c0ad37e940"
+      },
+      {
+        "path": "tests/test_general_archive.py",
+        "sha256": "1b78139f83d1718528bb8831cc82a59af30f06f4e25fac4a121657803839e3c4"
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      }
+    ],
+    "cross_snapshot_comparison": "Code and tests byte-identical in three archived snapshots; the GPLv3 license byte-identical in all six."
+  },
+  "license": {
+    "source": "GNU General Public License version 3",
+    "path": "LICENSE",
+    "relicensed_as_apache_2_0": false
+  },
+  "explicit_exclusions": [
+    "Black Swan v8 detection engine",
+    "Full project regression suite (previously 84 of 85 passed on Python 3.13.5)",
+    "Real-world telemetry and blind validation",
+    "Core 0.2.1 notebook and datasets",
+    "Historical credential revocation status",
+    "Comprehensive independent security audit"
+  ],
+  "limitations": [
+    "This is not a malware sandbox, cryptographic signature checker or full secret scanner.",
+    "JSON output can include sensitive source contents not matched by heuristic filters.",
+    "A missing archive yields awaiting_archive with exit code 0, not evidence of a successful inspection.",
+    "The historical known-hash comparison is informational, not an authenticity guarantee.",
+    "Test claims are limited to the stated Python version, unit cases and smoke cases."
+  ]
+}

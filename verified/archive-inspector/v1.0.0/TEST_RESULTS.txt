@@ -1,0 +1,26 @@
+Black Swan Archive Inspector v1.0.0 — scoped unit-test record
+UTC: 2026-10-27T10:04:30+00:00
+Runtime: Python 3.13.5 on Linux
+Command: python3 -m unittest discover -s tests -p 'test_*.py' -v
+
+test_all_agent_instructions_are_included ... ok
+test_duplicate_path_is_rejected ... ok
+test_expanded_size_limit_is_enforced ... ok
+test_modified_archive_is_reported_as_different ... ok
+test_path_traversal_is_rejected ... ok
+test_possible_secret_content_is_not_returned ... ok
+test_reads_selected_source_without_executing_it ... ok
+test_symlink_is_rejected ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.007s
+
+OK
+
+CLI smoke test (local temporary archives):
+- Benign synthetic ZIP: status inspected, exit code 0 (PASS).
+- Unsafe traversal ZIP: status inspection_failed, exit code 1 (PASS).
+- No real project archive, credentials, raw telemetry or hidden labels were included.
+
+Scope of this record: only this standalone tool and its original tests.
+The parent Black Swan v8 project and real-world detection performance are NOT certified.
