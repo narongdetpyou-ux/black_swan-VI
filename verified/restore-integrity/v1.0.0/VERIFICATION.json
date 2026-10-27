@@ -1,0 +1,27 @@
+{
+  "artifact": "restore-integrity",
+  "version": "1.0.0",
+  "status": "PASS_SCOPED_OFFLINE_UTILITY",
+  "verified_runtime": "CPython 3.13.5 Linux",
+  "unit_tests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "isolated_restore_smoke": {
+    "files_checked": 111,
+    "matching": 111,
+    "results": "PASS; no snapshot contents published"
+  },
+  "scope_exclusions": [
+    "Black Swan Logic v8 end-to-end acceptance",
+    "Python 3.12 baseline comparison",
+    "credential revocation",
+    "real telemetry dataset admission",
+    "production SLA and adversarial filesystem concurrency"
+  ],
+  "files_sha256": {
+    "scripts/verify_restore.py": "8b288d52bc19dd659e013cc254bc4f6821b3113e5261a1a5978876468a7b86cb",
+    "tests/test_verify_restore.py": "4a4dfdf97b9cebfa46aa704f9da7992a154d54d9460a68dce306af7a46845877",
+    "TEST_RESULTS.txt": "348cb1879b1f52177999e861f15a28d21e5fc7dccb731410ebed95abacd1ef9d"
+  }
+}

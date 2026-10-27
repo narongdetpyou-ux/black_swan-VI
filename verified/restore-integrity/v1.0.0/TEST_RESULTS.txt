@@ -1,0 +1,20 @@
+test_cli_success_and_failure_codes (test_verify_restore.IntegrityTests.test_cli_success_and_failure_codes) ... ok
+test_dir_symlink_rejected (test_verify_restore.IntegrityTests.test_dir_symlink_rejected) ... ok
+test_duplicate_json_keys_rejected (test_verify_restore.IntegrityTests.test_duplicate_json_keys_rejected) ... ok
+test_extra_file_detected (test_verify_restore.IntegrityTests.test_extra_file_detected) ... ok
+test_false_size_bool_rejected (test_verify_restore.IntegrityTests.test_false_size_bool_rejected) ... ok
+test_file_symlink_rejected (test_verify_restore.IntegrityTests.test_file_symlink_rejected) ... ok
+test_invalid_manifest_hash_rejected (test_verify_restore.IntegrityTests.test_invalid_manifest_hash_rejected) ... ok
+test_manifest_cannot_be_inside_root (test_verify_restore.IntegrityTests.test_manifest_cannot_be_inside_root) ... ok
+test_manifest_determinism (test_verify_restore.IntegrityTests.test_manifest_determinism) ... ok
+test_matching_tree (test_verify_restore.IntegrityTests.test_matching_tree) ... ok
+test_missing_file_detected (test_verify_restore.IntegrityTests.test_missing_file_detected) ... ok
+test_modified_file_detected (test_verify_restore.IntegrityTests.test_modified_file_detected) ... ok
+test_no_overwrite (test_verify_restore.IntegrityTests.test_no_overwrite) ... ok
+test_non_regular_root_rejected (test_verify_restore.IntegrityTests.test_non_regular_root_rejected) ... ok
+test_unsafe_manifest_path_rejected (test_verify_restore.IntegrityTests.test_unsafe_manifest_path_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 2.664s
+
+OK

@@ -7,6 +7,7 @@ This public repository is a **curated record of independently checked, explicitl
 | Release | What was verified | Evidence | Status |
 |---|---|---|---|
 | [Archive Inspector v1.0.0](verified/archive-inspector/v1.0.0/README.md) | Original stand-alone ZIP inspection utility: 8/8 unit tests and positive/negative CLI smoke checks on Python 3.13.5 | [Verification record](verified/archive-inspector/v1.0.0/VERIFICATION.json) · [Test output](verified/archive-inspector/v1.0.0/TEST_RESULTS.txt) | **PASS — scoped utility only** |
+| [Restore Integrity Verifier v1.0.0](verified/restore-integrity/v1.0.0/README.md) | Offline file-tree SHA-256 verification: 15/15 unit tests and 111/111 local restore smoke check on Python 3.13.5 | [Verification record](verified/restore-integrity/v1.0.0/VERIFICATION.json) · [Test output](verified/restore-integrity/v1.0.0/TEST_RESULTS.txt) | **PASS — scoped utility only** |
 
 ## Publication standard
 
